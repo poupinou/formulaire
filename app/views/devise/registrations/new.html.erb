@@ -1,29 +1,40 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class ="bloc">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class ="left">
+    <center><h1>rejoind la secte!!</h1>
+            <p> l'inscription devient plus simple</p></center>
   </div>
+    <div class ="right">
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+      <h2>Sign up</h2>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
 
-<%= render "devise/shared/links" %>
+             <center> <div>
+  <form action="/action_page.php">
+    <label for="email"></label>
+    <input type="text" id="email" name="email" placeholder="addresse email">
+
+    <label for="password"></label>
+    <input type="text" id="password" name="password" placeholder="password">
+
+
+    <label for="password-confirmation"></label>
+    <input type="text" id="password-confirmation" name="password-confirmation" placeholder="password confirmation">
+
+    
+    </select>
+    </form>
+</div></center>
+               <center><div class="sign">
+                <div class="sign2">
+                <%= link_to "Créer un compte", root_path %>
+            </div></center></div>
+                  <% end %>
+
+          </div>
+    </div>
+
