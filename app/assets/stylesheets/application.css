@@ -72,6 +72,12 @@ p{
 	color: white;
 }
 
+.link{
+
+	color: white;
+	text-decoration: none;
+}
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
